@@ -2,8 +2,7 @@
 
 NUMBER=$1
 
-if 
-   ([$NUMBER -lt 50])
+if [ $NUMBER -lt 50 ]
 then 
     echo "given statement is true"
 else
