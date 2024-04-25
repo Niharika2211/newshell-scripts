@@ -19,5 +19,19 @@ if [ $? -ne 0 ]
     exit 1 # error not a rootuser
  else
     echo "installation of mysql is success..."
-     #execute with root access
+     #executed with root access
 fi    
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+ then 
+    echo "git installation failed..."
+    exit 1 # not a root user"
+ else 
+    echo "git installations success"
+fi
+
+
+
+
