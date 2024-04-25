@@ -2,24 +2,23 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
+VALIDATE (){
+   if [ $1 -ne 0 ]
  then
-     echo "not a root user"
+     echo "$2......FAILURE"
     exit 1 
  else 
-    echo "yes you are a root user"
+    echo "$2......SUCCESS"
 fi
-
-VALIDATE { exit status=$1 success=$2 } 
-
+}
 
 dnf install mysql -y
 
-VALIDATE {( $?  installing mysql )}
+VALIDATE $?  "installing mysql" 
 
 dnf install git -y
 
-VALIDATE {( $?  installing git )}
+VALIDATE $?  "installing git"
 
 
 
