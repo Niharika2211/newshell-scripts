@@ -1,4 +1,4 @@
-# shell script
+# 3 TIER APPLICATION
 
 **steps:**
 * create repo in github
