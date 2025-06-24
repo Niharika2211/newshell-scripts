@@ -2,7 +2,7 @@
 
 **steps:**
 * create repo in github
-* clone repo i  local laptop
+* clone repo in local laptop
 * start develpoing
 * Add the files to temp area
 * commit the changes
